@@ -8,11 +8,11 @@ void getTwoValues(int &begin, int &end)
         cin >> begin >> end ;
     } while (begin > end);
 }
-int getNextPrime(int begin)
+int getNextPrime(int begin, int end)
 {
     int i, j;
     int prime;
-    for (i = begin; i < prime; i++)
+    for (i = begin + 1; i < prime; i++)
     {
         for (j = 2; j <= (i/2); j++)
         {
@@ -35,7 +35,7 @@ int getPrevPrime(int end)
 {
     int i, j;
     int prime;
-    for (i = end; i < prime; i--)
+    for (i = end - 1; i > prime; i--)
     {
         for (j = 2; j <= (i/2); j++)
         {
