@@ -8,7 +8,7 @@ void getTwoValues(int &begin, int &end)
         cin >> begin >> end ;
     } while (begin > end);
 }
-int getNextPrime(int begin, int end)
+int getNextPrime(int begin)
 {
     int i, j;
     int prime;
