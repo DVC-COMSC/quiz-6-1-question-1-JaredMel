@@ -1,8 +1,55 @@
+#include <iostream>
+using namespace std;
 
-//********************
-// Declare Function Prototypes
-//********************
+void getTwoValues(int &begin, int &end)
+{
+    do
+    {
+        cin >> begin >> end ;
+    } while (begin > end);
+}
+int getNextPrime(int begin)
+{
+    int i, j;
+    int prime;
+    for (i = begin; i < prime; i++)
+    {
+        for (j = 2; j <= (i/2); j++)
+        {
+            if (i % j == 0)
+            {
+                break;
+            }
+                        
+        }
+        if (j > (i/2))
+        {
+            prime = i;
+            break;
+        }
+    }
+    return prime;
+}
 
-// ******************************
-// Implement all your functions here
-// ******************************
+int getPrevPrime(int end)
+{
+    int i, j;
+    int prime;
+    for (i = end; i < prime; i--)
+    {
+        for (j = 2; j <= (i/2); j++)
+        {
+            if (i % j == 0)
+            {
+                break;
+            }
+                        
+        }
+        if (j > (i/2))
+        {
+            prime = i;
+            break;
+        }
+    }
+    return prime;
+}
